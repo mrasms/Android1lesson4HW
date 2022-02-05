@@ -14,7 +14,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     ArrayList<BooksModel> list = new ArrayList<>();
-private BooksAdapter bookAdapter;
+    private BooksAdapter bookAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -30,7 +30,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BooksHolder>
 
     @Override
     public void onBindViewHolder(@NonNull BooksAdapter.BooksHolder holder, int position) {
-    holder.onBind(list.get(position));
+        holder.onBind(list.get(position));
     }
 
     @Override
@@ -39,10 +39,11 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BooksHolder>
     }
 
     public class BooksHolder extends RecyclerView.ViewHolder {
-       TextView tvBookNames;
+        TextView tvBookNames;
+
         public BooksHolder(@NonNull View itemView) {
             super(itemView);
-            tvBookNames=itemView.findViewById(R.id.tv_book_names);
+            tvBookNames = itemView.findViewById(R.id.tv_book_names);
         }
 
         public void onBind(BooksModel booksModel) {
